@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kabir Virk Portfolio Website</title>
+  <meta name="description" content="Portfolio of Kabir Virk Electrical Engineering (Co-op) '30'">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="name">Kabir Virk</div>
+          <div class="muted">Electrical Engineering (Co-op)</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Learning PCB design using altium</h1>
+        <p class="muted">Incoming <b>Waterloo Electrical Engineering</b>. Interested in embedded systems, RF, and PCB design.</p>
+        <div class="chips">
+          <span class="chip mono">C/C++</span>
+          <span class="chip mono">Python/ MicroPython</span>
+          <span class="chip mono">Arduino</span>
+          <span class="chip mono">ESP32</span>
+          <span class="chip mono">Soldering</span>
+          <span class="chip mono">Digital Logic</span>
+        </div>
+        <p style="margin-top:14px">
+          <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="#projects">See Projects</a>
+        </p>
+      </div>
+      <div class="card">
+        <h2>Information</h2>
+        <div class="list">
+          <div class="row"><span>Location</span><span class="muted">Toronto, ON</span></div>
+          <div class="row"><span>Focus</span><span class="muted">Embedded, RF,</span></div>
+          <div class="row"><span>Looking for</span><span class="muted">Winter 2026 Internships</span></div>
+          <div class="row"><span>Resume</span><span><a href="#" class="mono">PDF (Change to email me)</a></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About me</h2>
+      <p>I’m Kabir……………………</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">C/C++</span>
+        <span class="chip">Python</span>
+        <span class="chip">ESP32</span>
+        <span class="chip">Digital logic</span>
+        <span class="chip">Github</span>
+        <span class="chip">Soldering</span>
+        <span class="chip">Arch Linux</span>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Flipper Zero Expansion Module</h3>
+          <p class="muted">..........</p>
+          <p><a href="#" class="mono">GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3>4-Bit Binary Adder</h3>
+          <p class="muted">.........</p>
+          <p><a href="#" class="mono">Write-up</a></p>
+        </div>
+        <div class="card">
+          <h3>Arduino Radio Controlled Car</h3>
+          <p class="muted">..........</p>
+          <p><a href="#" class="mono">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kabirvirk91@gmail.com">kabirvirk1206@gmail.com</a>
+        <button class="chip mono" onclick="copyEmail()">Copy</button>
+        <span id="copied" class="muted" style="opacity:0;transition:opacity .2s">Copied</span>
+      </p>
+      <p>Also on <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> and <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Kabir Virk • Built with plain HTML/CSS/JS</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
