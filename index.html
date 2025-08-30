@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kabir Virk Portfolio Website</title>
+  <meta name="description" content="Portfolio of Kabir Virk Electrical Engineering (Co-op) '30'">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="name">Kabir Virk</div>
+          <div class="muted">Electrical Engineering (Co-op)</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>Overview</h2>
+        <h1 style="font-weight:normal;">Looking for <b> Winter 2026 </b> Internships/Co-ops</h1>
+        <p class="muted">Currently learning <b>PCB design</b> using Altium Designer.</p>
+        <p style="margin-top:14px">
+          <a class="btn" href="https://github.com/kabirvirk1206" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/kabir-virk" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="#projects">Projects</a>
+        </p>
+      </div>
+      <div class="card">
+        <h2>Information</h2>
+        <div class="list">
+          <div class="row"><span>Location</span><span class="muted">Toronto, ON</span></div>
+          <div class="row"><span>Focus</span><span class="muted">Embedded Systems & RF</span></div>
+          <div class="row"><span>Looking for</span><span class="muted">Winter 2026 Internships/Co-ops</span></div>
+          <div class="row">
+            <span>Resume</span>
+            <span><a href="Kabir Virk Resume.pdf"class="mono" download>Download PDF</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About me</h2>
+      <p>Hi, I'm Kabir, a first-year Electrical Engineering student at the University of Waterloo. I am passionate about PCB design, RF systems, and embedded systems, and I am eager to continue developing my skills in these areas. I am currently seeking Winter 2026 internship opportunities. Please feel free to reach out to me!</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Technical Skills & Technologies</h2>
+      <div class="chips">
+        <span class="chip">C/C++</span>
+        <span class="chip">Arduino</span>
+        <span class="chip">ESP32</span>
+        <span class="chip">Multimeter</span>
+        <span class="chip">Wiring</span>
+        <span class="chip">Soldering</span>
+        <span class="chip">Circuit Design</span>
+        <span class="chip">Digital Logic</span>
+        <span class="chip">Python</span>
+        <span class="chip">Java</span>
+        <span class="chip">HTML/CSS/JavaScript</span>
+        <span class="chip">Linux</span>
+        <span class="chip">Git & Github</span>
+        <span class="chip">JetBrains</span>
+        <span class="chip">Visual Studio</span>
+        <span class="chip">Eclipse</span>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Flipper Zero Expansion Module</h3>
+          <p class="muted">Built a Flipper Zero expansion module using an ESP32 that acts as a replacement for the Wi-Fi dev board, while also communicating with a second ESP32 via Python.</p>
+          <p><a href="#" class="mono">GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3>4-Bit Binary Adder</h3>
+          <p class="muted">Built a 4-bit binary adder on breadboard using various 74LS logic gates, DIP switches for inputs, and LEDs for outputs to demonstrate digital logic design.</p>
+          <p><a href="#" class="mono">GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3>Arduino Radio Controlled Car</h3>
+          <p class="muted">Built a radio-controlled car using two Arduinos, motor drivers, and RF modules, with a joystick based controller for movement.</p>
+          <p><a href="#" class="mono">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>
+        Email: <a id="emailLink" href="mailto:kabirvirk1206@gmail.com">kabirvirk1206@gmail.com</a>
+        <button class="chip mono" onclick="copyEmail()">Copy</button>
+        <span id="copied" class="muted" style="opacity:0;transition:opacity .2s">Copied</span>
+      </p>
+      <p>
+        Also on
+        <a href="https://github.com/kabirvirk1206" target="_blank" rel="noopener">GitHub</a>
+        and
+        <a href="https://www.linkedin.com/in/kabir-virk" target="_blank" rel="noopener">LinkedIn</a>.
+      </p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Kabir Virk • Built with plain HTML/CSS/JS</p>
+    </footer>
+  </div>
